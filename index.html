@@ -12,100 +12,234 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <!-- dev icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
-
     <!-- font awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
-    <link rel="stylesheet" href="./assets/css/main.css">
+    <!-- css link -->
+    <link rel="stylesheet" href="./assets/css/main.scss">
+
     <title>Ismaël SAÏ personal webpage</title>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-            <div class="title text-center">
-                <!-- <img src="./assets/images/profile.jpg" class="pp"> -->
-                <h1>Ismaël SAÏ</h1>
-                <h3>Étudiant en master AIGLE</h3>
-                <h4><a href="http://https://github.com/SAIIsmael">github</a></h4>
-                <hr />
-                <ul class="list-inline">
-                    <li><i class="devicon-symfony-plain colored"></i></li>
-                    <li><i class="devicon-angularjs-plain colored"></i></li>
-                    <li><i class="devicon-nodejs-plain colored"></i></li>
-                    <li><i class="devicon-mongodb-plain colored"></i></li>
-                    <li><i class="devicon-android-plain colored"></i></li>
-                    <li><i class="devicon-java-plain colored"></i></li>
-                    <li><i class="devicon-c-plain colored"></i></li>
-                    <li><i class="devicon-cplusplus-plain colored"></i></li>
-                    <li><i class="devicon-git-plain colored"></i></li>
-                    <li><i class="devicon-ubuntu-plain"></i></li>
-                </ul>
-                <hr />
-            </div>
+
+    <!-- navigation section -->
+    <header>
+
+        <div class="user">
+            <img src="./assets/images/profile.jpg" alt="">
+            <h3 class="name">Ismaël SAÏ</h3>
+            <p class="post">Computer science engineer specialized in web and software development</p>
+        </div>
+    
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+    <!-- end navigation section -->
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <!-- home section starts  -->
+    <section class="home" id="home">
+
+    <h3>HI THERE !</h3>
+    <h1>I'M <span>ISMAËL SAÏ</span></h1>
+    <p>passionate about new technologies, I'm a computer science engineer specialized in web and software development. 
+    I'm from France, living in Montpellier.
+    </p>
+    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+
+    </section>
+    <!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+<h1 class="heading"> <span>about</span> me </h1>
+
+<div class="row">
+
+    <div class="info">
+        <h3> <span> name : </span> Ismaël SAÏ </h3>
+        <h3> <span> age : </span> 26 </h3>
+        <h3> <span> qualification : </span> MCS specialized in web development and software engineering </h3>
+        <h3> <span> post : </span> fullstack developer </h3>
+        <h3> <span> language : </span> French, English </h3>
+        <a href="./assets/other/cv_ismael_sai.pdf" download="cv_ismael_sai.pdf" target="_blank"><button class="btn"> download CV <i class="fas fa-download"></i> </button></a>
+    </div>
+
+    <div class="counter">
+
+        <div class="box">
+            <span>6</span>
+            <h3>months of experience</h3>
         </div>
 
+        <div class="box">
+            <span>10+</span>
+            <h3>project completed</h3>
+        </div>
 
-            <!-- summary section -->
-            <section class="summary">
-                <p>Étudiant en master AIGLE (Architectures et Ingénierie du logiciel et du Web) à la recherche d'un stage de fin d'année
-                    en développement web/logiciel qui me permettrait d'une part d'acquérir une première expérience en entreprise et d'autre part
-                    de pouvoir mettre à l'épreuve les connaissances acquises lors de mon cursus scolaire.
-                </p>
-            </section>
+        <!-- <div class="box">
+            <span>430+</span>
+            <h3>happy clients</h3>
+        </div>
 
+        <div class="box">
+            <span>12+</span>
+            <h3>awards won</h3>
+        </div> -->
 
-            <!-- work experience section -->
-            <div class="work-experience">
-               <section class="it-projects">
-                   <h2> <i class="fas fa-laptop-code"></i> Projets informatiques </h2>
-                        <div class="course">
-                            <div class="course-preview">
-                                <h6>Projet responsive</h6>
-                                <a href="https://gitlab.com/Amoross/responsive-project">voir sur git <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                            <div class="course-info">
-                                <div class="progress-container">
-                                <i class="devicon-angularjs-plain colored"></i> <i class="devicon-nodejs-plain colored"></i> <i class="devicon-git-plain colored"></i>
-                                </div>
-                                <h6>Description</h6>
-                                <br />
-                                <p class="pdesc">Réalisation d'un moteur de recherche sur l'api "jeuxdemots.org" en optimisant les temps de réponses via des caches.</p>
-                            </div>
-                        </div>
-                          <div class="course">
-                            <div class="course-preview">
-                                <h6>Projet analyse avis</h6>
-                                <a href="https://gitlab.com/SAIIsmael/analyseavis">voir sur git <i class="fas fa-chevron-right"></i></a>
-                            </div>
-                            <div class="course-info">
-                                <div class="progress-container">
-                                <i class="devicon-angularjs-plain colored"></i> <i class="devicon-nodejs-plain colored"></i> <i class="devicon-mongodb-plain colored"></i> <i class="devicon-git-plain colored"></i>
-                                </div>
-                                <h6>Description</h6>
-                                <br />
-                                <p class="pdesc">Analyse textuelle d'avis hôteliers dans le but de colorer les différents descripteurs ontologiques représentant les différents hôtels.</p>
-                            </div>
-                        </div>
-                        </div>
-                        
+    </div>
 
-               </section>
-            </div>
-            <div class="work-experience">
-                <section class="scolarship">
-                    <h2> <i class="fas fa-school"></i> Cursus scolaire </h2>
+</div>
 
-                </section>
+</section>
 
-            </div>
+<!-- about section ends -->
+
+<!-- education section starts  -->
+
+<section class="education" id="education">
+
+<h1 class="heading"> my <span>education</span> </h1>
+<div class="box-container">
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2013</span>
+        <h3>Baccalauréat STI2D                   </h3>
+        <h4 class="location"> <p class="fas fa-map-marker-alt"></p>Jean Mermoz high school, Montpellier, France.</h4>
+        <p>Technological innovation and eco-design option.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2019</span>
+        <h3>Bachelor's degree in Computer Science</h3>
+        <h4 class="location"> <p class="fas fa-map-marker-alt"></p>University of Sciences of Montpellier, France.</h4>
+        <p>algorithmic, object-oriented programming, network programming, web development.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-graduation-cap"></i>
+        <span>2021</span>
+        <h3>Master in Computer Science           </h3>
+        <h4 class="location"> <p class="fas fa-map-marker-alt"></p>University of Sciences of Montpellier, France.</h4>
+        <p>Specialized in web development and software engineering.</p>
+    </div>
+
+    <div class="box">
+        <i class="fas fa-briefcase"></i>
+        <span>feb. 2021 - jul. 2021</span>
+        <h3>R&D developer trainee</h3>
+        <h4 class="location"> <p class="fas fa-map-marker-alt"></p> Berger-Levrault, Labège, France.</h4>
+        <p>Development of an internal management tool in NodeJS, Neo4J, ElasticSearch, Angular on a micro-services and micro-frontend architecture. Deployment performed via a CI/CD pipeline.</p>
     </div>
 </div>
 
+</section>
+
+<!-- education section ends -->
+
+<!-- portfolio section starts  -->
+
+<section class="portfolio" id="portfolio">
+
+<h1 class="heading"> my <span>portfolio</span> </h1>
+
+<div class="box-container">
+
+    <div class="box">
+        <img src="images/img1.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img2.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img3.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img4.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img5.jpg" alt="">
+    </div>
+
+    <div class="box">
+        <img src="images/img6.jpg" alt="">
+    </div>
+
+</div>
+
+</section>
+
+<!-- portfolio section ends -->
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+<h1 class="heading"> <span>contact</span> me </h1>
+
+<div class="row">
+
+    <div class="content">
+
+        <h3 class="title">contact info</h3>
+
+        <div class="info">
+            <h3> <i class="fas fa-envelope"></i> ismaelsai@yahoo.com </h3>
+            <h3> <i class="fas fa-phone"></i> +33 0606794534 </h3>
+            <h3> <i class="fas fa-map-marker-alt"></i> Montpellier, France - 34080. </h3>
+        </div>
+
+    </div>
+
+    <form action="mailto:ismaelsai@yahoo.com" method="post" enctype="text/plain">
+
+        <input type="text" placeholder="name" class="box">
+        <input type="email" placeholder="email" class="box">
+        <input type="text" placeholder="subject" class="box">
+        <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message"></textarea>
+        <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+
+    </form>
+
+</div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+<!-- scroll top button  -->
+
+<a href="#home" class="top">
+    <img src="images/scroll-top-img.png" alt="">
+</a>
+
 </body>
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- js link -->
 <script src="./assets/js/main.js"></script>
+
 </html>
 
 
